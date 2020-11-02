@@ -183,10 +183,18 @@ h3 {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vw;
+  height: 80vw;
 }
 
 #exoplanets {
+  background-image: url("../images/exoplanets.png");
+  background-color: black;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vw;
 }
 
 #arewealone {
