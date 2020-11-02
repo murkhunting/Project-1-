@@ -22,7 +22,7 @@
         <div class="nav-container">
           <!-- HOME BUTTON -->
           <a href="Homepage.html"
-            ><img src="images/logo principal.png" alt="Logo" class="minilogo"
+            ><img src="images/logo principal.png" alt="Logo" class="minilogos"
           /></a>
           <div id="menu-btn">
             <div class="burger-menu-icon">
@@ -33,11 +33,18 @@
             </div>
           </div>
         </div>
-        <div class="navmenu">
-          <a href="dashboard.html">Dashboard</a>
-          <a href="signup.html">Sign Up</a>
-          <a href="login.html">Login</a>
-        </div>
+        <span class="letrasblancas">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Dashboard.html">Dashboard</a>
+        </span>
+        <span class="letrasblancas">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Signup.html">Sign Up</a>
+        </span>
+        <span class="letrasblancas">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Login.Html">Login</a>
+        </span>
       </nav>
     </header>
 
@@ -47,8 +54,8 @@
         <div class="form-wrapper">
           <form class="signup-form" action="">
             <input type="text" id="name" placeholder="Observer Name" />
-            <input type="text" id="pokemon" placeholder="Favorite Planet" />
-            
+            <input type="text" id="planet" placeholder="Your Own Exo-Planet" />
+
             <!-- we can also use type="email" for the email input, to get additional validation by the browser -->
             <input type="text" id="email" placeholder="Email" />
             <input type="password" id="password" placeholder="Enter Password" />
@@ -60,7 +67,7 @@
 
             <!-- The `disabled` deactivates the button. Button will be activated or desactivated by the `checkButton` method in the Singup.js  -->
             <button type="submit" class="button" id="signup-button">
-              Sign Up
+              Sign Up New Observer!
             </button>
           </form>
 
@@ -68,12 +75,6 @@
         </div>
       </section>
     </main>
-    <div>
-      <!-- MAIN LOGO AND HOMEPAGE BUTTON -->
-      <a href="Homepage.html"
-        ><img src="images/logo principal.png" alt="Logo" class="mainlogo"
-      /></a>
-    </div>
 
     <script src="./scripts/Signup.js"></script>
     <script src="./scripts/User.js"></script>
