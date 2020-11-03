@@ -2,9 +2,80 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Exo-Observer - Dashboard</title>
+    <title>Exo-Observer - Astronomy pictures</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,600"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/burger-menu-icon.css" />
   </head>
-  <body>
-    <script src="./scripts/Api.js"></script>
+  <body id="galaxia">
+    <header>
+      <nav>
+        <!-- NAVIGATION BAR -->
+        <div class="nav-container">
+          <!-- HOME BUTTON -->
+          <a href="Homepage.html"
+            ><img src="images/logo principal.png" alt="Logo" class="minilogos"
+          /></a>
+          <div id="menu-btn">
+            <div class="burger-menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <span class="logosblancos">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Exoplanets.html">Exoplanets</a>
+        </span>
+        <span class="logosblancos">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Signup.html">Sign Up </a>
+        </span>
+        <span class="logosblancos">
+          <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          <a class="letrasblancas" href="Login.Html">Login </a>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <h2>Astronomy Pictures</h2>
+      <div class="fotospunto">
+        <span class="centrar">
+          <a href="Homepage.html"
+            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></a>
+          <h6>MOON PICTURES</h6>
+        </span>
+        <span class="centrar">
+          <a href="Homepage.html"
+            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></a>
+          <h6>EARTH PICTURES</h6>
+        </span>
+        <span class="centrar">
+          <a href="Homepage.html"
+            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></a>
+          <h6>MARS PICTURES</h6>
+        </span>
+        <span class="centrar">
+          <a href="Homepage.html"
+            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></a>
+          <h6>RANDOM GALAXY PICTURES</h6>
+        </span>
+    </main>
+
+    <script src="./scripts/PicturesApi.js"></script>
   </body>
 </html>
