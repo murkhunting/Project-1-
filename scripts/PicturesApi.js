@@ -21,8 +21,7 @@ const url = "https://api.nasa.gov/planetary/apod?api_key=";
 
 // fetchNASAData();
 
-
-/*---- MOON ----*/
+/*---- MOON DATA ----*/
 const fetchMoonData = async () => {
   try {
     const response = await fetch(
@@ -31,11 +30,11 @@ const fetchMoonData = async () => {
     const data = await response.json();
     //console.log("", data);
     let randomIndex = Math.floor(Math.random() * 21);
-    const tittle = data.collection.items[randomIndex].data[0].description
-    console.log("tittle of the image: ", tittle);
-    const fetchLink = data.collection.items[randomIndex].href
-    console.log("link de la imagen: ", fetchLink)
-    
+    const tittle = data.collection.items[randomIndex].data[0].description;
+    console.log("tittle of the Moonimage: ", tittle);
+    const fetchLink = data.collection.items[randomIndex].href;
+    //console.log("link de la imagen: ", fetchLink);
+    fetchImages(fetchLink);
 
     //displayExoPlanets2(data);
   } catch (error) {
@@ -45,32 +44,20 @@ const fetchMoonData = async () => {
 
 fetchMoonData();
 
-async function fetchMoonImages() {
-  try {
-    const response = await fetch(
-      "https://images-assets.nasa.gov/image/PIA08207/collection.json"
-    );
-    const data = await response.json();
-    console.log("Exoplanets data", data);
-    const image = data[0];
-    console.log("image :>> ", image);
-
-    //displayExoPlanets2(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-fetchMoonImages();
-
-
-/*---- EARTH ----*/
+/*---- EARTH DATA ----*/
 const fetchEarthData = async () => {
   try {
     const response = await fetch(
       "https://images-api.nasa.gov/search?q=earth&media_type=image"
     );
     const data = await response.json();
-    console.log("", data);
+    //console.log("", data);
+    let randomIndex = Math.floor(Math.random() * 21);
+    const tittle = data.collection.items[randomIndex].data[0].description;
+    console.log("tittle of the Earthimage: ", tittle);
+    const fetchLink = data.collection.items[randomIndex].href;
+    //console.log("link of the earthImage: ", fetchLink);
+    fetchImages(fetchLink);
 
     //displayExoPlanets2(data);
   } catch (error) {
@@ -78,16 +65,22 @@ const fetchEarthData = async () => {
   }
 };
 
+fetchEarthData();
 
-
-/*---- MARS ----*/
+/*---- MARS DATA ----*/
 const fetchMarsData = async () => {
   try {
     const response = await fetch(
-      "https://images-api.nasa.gov/search?q=mars&media_type=image"
+      "https://images-api.nasa.gov/search?q=mars+rover+images&media_type=image"
     );
     const data = await response.json();
-    console.log("", data);
+    //console.log("", data);
+    let randomIndex = Math.floor(Math.random() * 21);
+    const tittle = data.collection.items[randomIndex].data[0].description;
+    console.log("tittle of the Marsimage: ", tittle);
+    const fetchLink = data.collection.items[randomIndex].href;
+    //console.log("link of the earthImage: ", fetchLink);
+    fetchImages(fetchLink);
 
     //displayExoPlanets2(data);
   } catch (error) {
@@ -95,8 +88,9 @@ const fetchMarsData = async () => {
   }
 };
 
+fetchMarsData();
 
-/*---- GALAXY ----*/
+/*---- GALAXY DATA ----*/
 const fetchGalaxyData = async () => {
   try {
     const response = await fetch(
@@ -105,8 +99,11 @@ const fetchGalaxyData = async () => {
     const data = await response.json();
     // console.log("", data);
     let randomIndex = Math.floor(Math.random() * 21);
-    const fetchLink = data.collection.items[randomIndex].href
-    console.log("link de la imagen", fetchLink)
+    const tittle = data.collection.items[randomIndex].data[0].description;
+    console.log("tittle of the Galaxyimage: ", tittle);
+    const fetchLink = data.collection.items[randomIndex].href;
+    //console.log("link of the earthImage: ", fetchLink);
+    fetchImages(fetchLink);
 
     //displayExoPlanets2(data);
   } catch (error) {
@@ -114,4 +111,19 @@ const fetchGalaxyData = async () => {
   }
 };
 
-fetchGalaxyData()
+fetchGalaxyData();
+
+/*---- FUNCTION TO FETCH THE IMAGES INSIDE THE FETCH----*/
+async function fetchImages(link) {
+  try {
+    const response = await fetch(`${link}`);
+    const data = await response.json();
+    //console.log("moondata: ", data);
+    const image = data[0];
+    console.log("image :>> ", image);
+
+    //displayExoPlanets2(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
