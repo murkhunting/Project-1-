@@ -16,8 +16,8 @@
     />
   </head>
 
-  <body>
-    <header id="portada">
+  <body id="portada">
+    <header>
       <nav>
         <!-- NAVIGATION BAR -->
         <div class="nav-container">
@@ -50,32 +50,42 @@
 
       <div>
         <!-- MAIN LOGO AND HOMEPAGE BUTTON -->
-        <a href="Homepage.html"
+        <a href="index.html"
           ><img src="images/logo principal.png" alt="Logo" class="mainlogo"
         /></a>
-        <h4 id="subtitlehide">- Astronomy pictures - Exoplanetary Guide -</h4>
+        <h3>- Astronomy pictures - Exoplanetary Guide -</h3>
         <h1>Exo-Observer</h1>
       </div>
     </header>
-    <section id="galaxia">
+
+    <section>
       <h3>WE ALL KNOW THAT THE UNIVERSE IS INFINITE AND AMAZING</h3>
-      <h2>LET'S TAKE A LOOK!</h2>
+
       <a href="AstronomyPictures.html"
-        ><img src="images/logo no observer.png" alt="Logo" class="changinglogo"
+        ><img
+          src="images/logo no observer.png"
+          onmouseover="this.src='images/logo observer.png';"
+          onmouseout="this.src='images/logo no observer.png';"
+          alt="Logo"
+          class="changinglogo"
       /></a>
+      <h2 class="separador">LET'S TAKE A LOOK!</h2>
     </section>
 
-    <section id="exoplanets">
+    <section>
       <h3>WHAT DO YOU KNOW ABOUT EXOPLANETS?</h3>
       <h3>IS THERE A PLANET B?</h3>
 
       <p></p>
-      <h2>- EXISTING EXOPLANETS DATABASE -</h2>
+
       <a href="Exoplanets.html"
         ><img src="images/exoicono.png" alt="apis" class="exologo"
       /></a>
+      <h2>- EXISTING EXOPLANETS DATABASE -</h2>
     </section>
 
-    <div></div>
+    <section>
+      
+    </section>
   </body>
 </html>
