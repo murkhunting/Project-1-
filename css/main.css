@@ -85,6 +85,9 @@ h3 {
 h4 {
   color: white;
   text-align: center;
+  height: auto;
+  margin: 2%;
+  display: block;
 }
 
 h6 {
@@ -100,6 +103,12 @@ p {
   margin-right: 20%;
   margin-top: 1%;
   margin-bottom: 2%;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #portada {
@@ -227,8 +236,12 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 70vw;
+  width: auto;
+  height: auto;
+}
+
+.distancia {
+  margin-top: 70px;
 }
 
 .centrar {
@@ -293,6 +306,7 @@ p {
   width: 80%;
   height: auto;
   margin: 2%;
+  display: block;
 }
 
 /* The Close Button */

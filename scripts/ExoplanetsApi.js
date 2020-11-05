@@ -14,7 +14,7 @@ const fetchExoplanetsData = async () => {
       const name = data[i].pl_name;
       const facility = data[i].pl_facility;
       const radio = data[i].pl_radj;
-      // console.log("exoplanet name: ", name);
+      console.log("exoplanet name: ", name);
       // console.log("exoplanet facility: ", facility);
       // console.log("exoplanet radio: ", radio);
       const article = document.createElement("article");
