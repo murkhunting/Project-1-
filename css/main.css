@@ -62,13 +62,14 @@ h2 {
   padding: 0;
   text-align: center;
   padding-top: 5%;
+  margin-bottom: 20px;
 }
 
 .separador {
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-bottom: 100px;
   border-bottom: 6px dotted rgb(102, 102, 102);
 }
@@ -78,6 +79,7 @@ h3 {
   color: white;
   padding: 0;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -86,6 +88,7 @@ h4 {
 }
 
 h6 {
+  font-size: 1.2rem;
   color: white;
   text-align: center;
 }
@@ -131,8 +134,16 @@ p {
   transition: 0.5s ease-in-out;
 }
 
-.minilogos:hover {
+.iconos {
   height: 120px;
+  width: auto;
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+
+.iconos:hover {
+  height: 130px;
+  opacity: 1;
   transition-duration: 0.5s;
 }
 
@@ -157,6 +168,7 @@ p {
   transition-duration: 0.5s;
 }
 
+/*Hacer que el título aparzca al hacer hover*/
 .mainlogo:hover ~ #subtitlehide {
   font-size: 1.7rem;
   color: white;
@@ -165,24 +177,26 @@ p {
   opacity: 1;
 }
 
-.exologo {
-  height: 300px;
+.exoplanet {
+  height: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   width: auto;
-  opacity: 0.7;
+  opacity: 0.3;
   transition: 0.5s ease-in-out;
 }
-.exologo:hover {
-  height: 450px;
+
+.exoplanet:hover {
+  height: 360px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   width: auto;
   opacity: 1;
-  transition-duration: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .changinglogo {
@@ -225,11 +239,13 @@ p {
 }
 
 .fotospunto {
-  padding-top: 230px;
-  position: relative;
+  padding-top: 180px;
+  /*position: relative;*/
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* The Modal (background) */
@@ -242,16 +258,41 @@ p {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: black;
 }
 
 /* Modal Content/Box */
-.modal-content {
+.moonmodal-content {
   background-color: black;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid grey;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+.earthmodal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid grey;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+.marsmodal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid grey;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+.galaxymodal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid grey;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+.imagemodal {
+  width: 80%;
+  height: auto;
+  margin: 2%;
 }
 
 /* The Close Button */
@@ -354,15 +395,17 @@ p {
 }
 
 .message-container p {
-  background-color: var(--red-color);
   padding: 10px;
   margin: 10px 0;
   color: white;
   border-radius: 5px;
-  box-shadow: 0 0 10px #feb1b1;
+  box-shadow: 0 0 10px #9e1414;
 }
 
 .message-container p.correct-message {
-  background-color: rgb(47, 164, 93);
-  box-shadow: 0 0 10px #dbf1c1;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #269461;
 }
