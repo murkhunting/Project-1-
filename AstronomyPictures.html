@@ -48,34 +48,76 @@
       </nav>
     </header>
     <main>
-      <h2>Astronomy Pictures</h2>
+      
+      <h2>Astronomy Pictures from NASA</h2>
       <div class="fotospunto">
-        <span class="centrar">
-          <a href="index.html"
-            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
-          /></a>
+        <div class="centrar">
+            <div onclick="fetchMoonData()" style="cursor:pointer" id="moonButton">
+            <img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></div>
           <h6>MOON PICTURES</h6>
-        </span>
-        <span class="centrar">
-          <a href="index.html"
+        </div>
+        <div class="centrar">
+          <div onclick="fetchEarthData()" style="cursor:pointer" id="earthButton">
             ><img src="images/iconoapis.png" alt="apis" class="minilogos"
-          /></a>
+          />
+        </div>
           <h6>EARTH PICTURES</h6>
-        </span>
-        <span class="centrar">
-          <a href="index.html"
-            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
-          /></a>
+        </div>
+        <div class="centrar">
+          <div onclick="fetchMarsData()" style="cursor:pointer" id=marsButton>
+            <img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></div>
           <h6>MARS PICTURES</h6>
-        </span>
-        <span class="centrar">
-          <a href="index.html"
-            ><img src="images/iconoapis.png" alt="apis" class="minilogos"
-          /></a>
+        </div>
+        <div class="centrar">
+          <div onclick="fetchGalaxyData()" style="cursor:pointer" id="galaxyButton">
+            <img src="images/iconoapis.png" alt="apis" class="minilogos"
+          /></div>
           <h6>RANDOM GALAXY PICTURES</h6>
-        </span>
+        </div>
+
+
+        <!-- MoonModal -->
+        <div id="moonModal" class="modal">
+          <!-- Modal content -->
+          <div   class="modal-content">
+            <span class="close">&times;</span>
+            
+          </div>
+        </div>
+        <!-- EarthModal -->
+        <div id="earthModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            
+          </div>
+        </div>
+        <!-- MarsModal -->
+        <div id="marsModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            
+          </div>
+        </div>
+        <!-- GalaxyModal -->
+        <div id="galaxyModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            
+          </div>
+        </div>
+
+
+       
+
+
     </main>
 
     <script src="./scripts/PicturesApi.js"></script>
+    <script src="./scripts/modals.js"></script>
   </body>
 </html>

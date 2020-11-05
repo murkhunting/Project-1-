@@ -30,6 +30,7 @@
 //     }
 //   };
 //   fetchExoPlanetsImage();
+const exoplanetList = document.querySelector(".exoplanet-list");
 
 const fetchExoplanetsData = async () => {
   try {
@@ -43,10 +44,18 @@ const fetchExoplanetsData = async () => {
       const name = data[i].pl_name;
       const facility = data[i].pl_facility;
       const radio = data[i].pl_radj;
-      console.log("exoplanet name: ", name);
-      console.log("exoplanet facility: ", facility);
-      console.log("exoplanet radio: ", radio);
+      // console.log("exoplanet name: ", name);
+      // console.log("exoplanet facility: ", facility);
+      // console.log("exoplanet radio: ", radio);
+      const article = document.createElement("article");
+      article.innerHTML = `
+      <h3>Name: ${name}</h3>
+      <h3>Observatory: ${facility}</h3>
+      <h3>Radius: ${radio}</h3>
+      `;
+      exoplanetList.appendChild(article);
     }
+
     //displayExoPlanets2(data);
   } catch (error) {
     console.log(error);
