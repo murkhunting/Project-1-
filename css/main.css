@@ -127,6 +127,13 @@ p {
 .minilogos {
   height: 70px;
   width: auto;
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+
+.minilogos:hover {
+  height: 120px;
+  transition-duration: 0.5s;
 }
 
 .mainlogo {
@@ -218,7 +225,7 @@ p {
 }
 
 .fotospunto {
-  padding-top: 300px;
+  padding-top: 230px;
   position: relative;
   display: flex;
   align-items: center;
@@ -316,11 +323,7 @@ p {
   display: flex;
 }
 
-
 /*--SIGN UP & LOGIN--*/
-
-
-
 
 .form-wrapper {
   padding: 20px;
@@ -334,13 +337,20 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
-  
+  max-width: 450px;
+}
+.form-wrapper > form > input {
+  margin-bottom: 10px;
+  padding: 10px;
+  opacity: 0.7;
+}
+.form-wrapper > form > button {
+  padding: 10px;
 }
 
 .message-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .message-container p {
@@ -356,4 +366,3 @@ p {
   background-color: rgb(47, 164, 93);
   box-shadow: 0 0 10px #dbf1c1;
 }
-

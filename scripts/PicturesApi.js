@@ -3,25 +3,6 @@
 const apiKey = "orinHFtKbvLxKtP07t6KdHVA6AcakglvUD5VNaJH";
 const url = "https://api.nasa.gov/planetary/apod?api_key=";
 
-// const fetchNASAData = async () => {
-//   try {
-//     const response = await fetch(`${url}${apiKey}`);
-//     const data = await response.json();
-//     console.log("NASA APOD data", data);
-//     displayData(data);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
-// const displayData = (data) => {
-//   document.getElementById("title").textContent = data.title;
-//   document.getElementById("date").textContent = data.date;
-//   document.getElementById("picture").src = data.hdurl;
-//   document.getElementById("explanation").textContent = data.explanation;
-// };
-
-// fetchNASAData();
 
 /*---- MOON DATA ----*/
 const fetchMoonData = async () => {

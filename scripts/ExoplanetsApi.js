@@ -1,35 +1,5 @@
-// const fetchExoPlanets = async () => {
-//   try {
-//     const response = await fetch(
-//       "https://images-api.nasa.gov/search?q=moon&media_type=image"
-//     );
-//     const data = await response.json();
-//     console.log("Exoplanets data", data);
+"use strict";
 
-//     //displayExoPlanets2(data);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-// fetchExoPlanets();
-
-// async function fetchExoPlanetsImage () {
-
-//     try {
-//       const response = await fetch(
-//         "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&format=json"
-//       );
-//       const data = await response.json();
-//       console.log("Exoplanets data", data);
-//       const image= data[0]
-//       console.log('image :>> ', image);
-
-//       //displayExoPlanets2(data);
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-//   fetchExoPlanetsImage();
 const exoplanetList = document.querySelector(".exoplanet-list");
 
 const fetchExoplanetsData = async () => {
