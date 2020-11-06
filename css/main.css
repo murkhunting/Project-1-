@@ -13,6 +13,7 @@ nav {
   background-color: black;
   opacity: 0.4;
   transition: 0.5s ease-in-out;
+  height: 100px;
 }
 
 nav:hover {
@@ -38,7 +39,7 @@ nav:hover {
 }
 
 .letrasblancas:hover {
-  transition-duration: 0.5s;
+  /*transition-duration: 0.5s;*/
   padding-left: 30px;
   opacity: 1;
 }
@@ -63,6 +64,8 @@ h2 {
   text-align: center;
   padding-top: 5%;
   margin-bottom: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .separador {
@@ -80,6 +83,8 @@ h3 {
   padding: 0;
   text-align: center;
   margin-bottom: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 h4 {
@@ -157,7 +162,7 @@ article {
 }
 
 .mainlogo {
-  height: 200px;
+  height: 12vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -168,7 +173,7 @@ article {
 }
 
 .mainlogo:hover {
-  height: 300px;
+  height: 20vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -177,7 +182,7 @@ article {
   transition-duration: 0.5s;
 }
 
-/*Hacer que el título aparzca al hacer hover*/
+/*Hacer que el título aparzca al hacer hover
 .mainlogo:hover ~ #subtitlehide {
   font-size: 1.7rem;
   color: white;
@@ -185,9 +190,9 @@ article {
   text-align: center;
   opacity: 1;
 }
-
+*/
 .exoplanet {
-  height: 350px;
+  height: 20vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -198,7 +203,7 @@ article {
 }
 
 .exoplanet:hover {
-  height: 360px;
+  height: 22vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -209,7 +214,7 @@ article {
 }
 
 .changinglogo {
-  height: 450px;
+  height: 25vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -219,7 +224,7 @@ article {
   transition: 0.5s ease-in-out;
 }
 .changinglogo:hover {
-  height: 500px;
+  height: 30vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -236,12 +241,17 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+<<<<<<< HEAD
   width: auto;
   height: auto;
 }
 
 .distancia {
   margin-top: 70px;
+=======
+  width: 100vw;
+  height: auto;
+>>>>>>> master
 }
 
 .centrar {
@@ -307,21 +317,6 @@ article {
   height: auto;
   margin: 2%;
   display: block;
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /*--EXOPLANETS--*/
@@ -422,4 +417,136 @@ article {
   color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px #269461;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*BURGER MENU*/
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.enlaces {
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the hamburger menu */
+.menuicon {
+  display: flex;
+  margin-left: 10%;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    height: 200%;
+    padding-top: 10%;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+    border-bottom: 6px dotted rgb(102, 102, 102);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    color: white;
+    padding: 0;
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 10%;
+  }
+
+  h3 {
+    font-size: 1rem;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 10%;
+  }
+
+  .enlaces {
+    color: white;
+    padding: 20px 4px;
+    text-decoration: none;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logosblancos {
+    display: none;
+  }
+  .desaparece {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    height: 200%;
+    padding-top: 10%;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+    border-bottom: 6px dotted rgb(102, 102, 102);
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: white;
+    padding: 0;
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .miniminilogos {
+    position: relative;
+  }
 }

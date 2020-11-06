@@ -2,37 +2,38 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Exo-Observer - Astronomy pictures</title>
-    <link
+      <title>Exo-Observer - Astronomy pictures</title>
+      <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,600"
       rel="stylesheet"
-    />
+      />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/burger-menu-icon.css" />
   </head>
+
   <body id="galaxia">
     <header>
       <nav>
-        <!-- NAVIGATION BAR -->
+        <!-- RESPONSIVE NAVIGATION BAR -->
         <div class="nav-container">
-          <!-- HOME BUTTON -->
-          <a href="index.html"
-            ><img src="images/logo principal.png" alt="Logo" class="minilogos"
-          /></a>
-          <div id="menu-btn">
-            <div class="burger-menu-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div class="menuicon" onclick="toggleMenu()">
+            <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          </div>
+          <div id="myLinks">
+            <a class="enlaces" href="index.html">Homepage </a>
+            <a class="enlaces" href="Exoplanets.html">Exoplanets </a>
+            <a class="enlaces" href="Signup.html">SignUp</a>
+            <a class="enlaces" href="Login.Html">Login</a>
           </div>
         </div>
-
+        <!-- HOME BUTTON -->
+        <a class="desaparece" href="index.html"
+          ><img src="images/logo principal.png" alt="Logo" class="minilogos"
+        /></a>
+        <!-- NAVIGATION ICONS & LINKS-->
         <span class="logosblancos">
           <img src="images/logolink.png" alt="apis" class="miniminilogos" />
           <a class="letrasblancas" href="Exoplanets.html">Exoplanets</a>
@@ -122,5 +123,6 @@
 
     <script src="./scripts/PicturesApi.js"></script>
     <script src="./scripts/modals.js"></script>
+    <script src="./scripts/User.js"></script>
   </body>
 </html>
