@@ -16,6 +16,7 @@ moonSpan.onclick = function () {
 moonModal.onclick = function (event) {
   if (event.target == moonModal) {
     moonModal.style.display = "none";
+    location.reload();
   }
 };
 
@@ -35,6 +36,7 @@ earthSpan.onclick = function () {
 earthModal.onclick = function (event) {
   if (event.target == earthModal) {
     earthModal.style.display = "none";
+    location.reload();
   }
 };
 
@@ -54,6 +56,7 @@ marsSpan.onclick = function () {
 marsModal.onclick = function (event) {
   if (event.target == marsModal) {
     marsModal.style.display = "none";
+    location.reload();
   }
 };
 
@@ -73,5 +76,6 @@ galaxySpan.onclick = function () {
 galaxyModal.onclick = function (event) {
   if (event.target == galaxyModal) {
     galaxyModal.style.display = "none";
+    location.reload();
   }
 };

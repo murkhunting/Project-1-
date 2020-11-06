@@ -7,29 +7,30 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width:768)"
-      href="css/mediaquery.css"
+      href="css/menu.css"
     />
   </head>
 
   <body id="portada">
     <header>
       <nav>
-        <!-- NAVIGATION BAR -->
+        <!-- RESPONSIVE NAVIGATION BAR -->
         <div class="nav-container">
-          <div id="menu-btn">
-            <div class="burger-menu-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div class="menuicon" onclick="toggleMenu()">
+            <img src="images/logolink.png" alt="apis" class="miniminilogos" />
+          </div>
+          <div id="myLinks">
+            <a class="enlaces" href="AstronomyPictures.html">Pictures </a>
+            <a class="enlaces" href="Exoplanets.html">Exoplanets</a>
+            <a class="enlaces" href="Signup.html">SignUp</a>
+            <a class="enlaces" href="Login.Html">Login</a>
           </div>
         </div>
+        <!-- NAVIGATION ICONS & LINKS-->
         <span class="logosblancos">
           <img src="images/logolink.png" alt="apis" class="miniminilogos" />
           <a class="letrasblancas" href="AstronomyPictures.html">Pictures </a>
@@ -40,7 +41,7 @@
         </span>
         <span class="logosblancos">
           <img src="images/logolink.png" alt="apis" class="miniminilogos" />
-          <a class="letrasblancas" href="Signup.html">Sign Up </a>
+          <a class="letrasblancas" href="Signup.html">Sign Up</a>
         </span>
         <span class="logosblancos">
           <img src="images/logolink.png" alt="apis" class="miniminilogos" />
@@ -88,5 +89,6 @@
     </section>
 
     <section></section>
+    <script src="./scripts/User.js"></script>
   </body>
 </html>
