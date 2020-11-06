@@ -16,11 +16,7 @@ moonSpan.onclick = function () {
 moonModal.onclick = function (event) {
   if (event.target == moonModal) {
     moonModal.style.display = "none";
-<<<<<<< HEAD
-    location.reload(); // reload the page to start a new random fecth of images
-=======
     location.reload();
->>>>>>> master
   }
 };
 
