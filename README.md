@@ -1,6 +1,6 @@
 <h1>Exo-Observer - M1 Project</h1>
 
-![portada](C:\Users\troy1\Desktop\M1-Project\portada.png)
+![portada](../images/portada.png)
 
 <h2>Description</h2>
 
@@ -29,6 +29,8 @@ The **MVP** will include:
 - make @media queries for more devices and with a better design.
 
 - create a better “modal” for the exoplanets info.
+
+- welcome message when you sign up
 
 - maybe a log out option.
 
