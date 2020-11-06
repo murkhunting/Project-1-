@@ -1,6 +1,6 @@
 <h1>Exo-Observer - M1 Project</h1>
 
-![portada](C:\Users\troy1\Desktop\M1-Project\portada.png)
+![portada](../images/portada.png)
 
 <h2>Description</h2>
 
