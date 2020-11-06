@@ -30,6 +30,8 @@ The **MVP** will include:
 
 - create a better “modal” for the exoplanets info.
 
+- welcome message when you sign up
+
 - maybe a log out option.
 
 <h2>Wireframe</h2>
